@@ -1,0 +1,48 @@
+.nav-wrapper {
+  position: absolute;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  height: 100px;
+  right: 0;
+  align-items: center;
+}
+
+.menu {
+}
+.menu-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.menu-item {
+  font-size: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menu-item:hover {
+  background-color: gray;
+  color: black;
+}
+
+@media (max-width: 55.0613em) {
+  .nav-wrapper {
+    position: relative;
+    padding-top: 5px;
+    justify-content: center;
+  }
+  .menu-list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+}
